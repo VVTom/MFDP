@@ -1,0 +1,48 @@
+# --- Виртуальные окружения (Обязательно прячем!) ---
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+
+# --- Настройки редакторов кода ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Файлы данных (для ML / Data Science) ---
+# Прячем большие файлы данных, чтобы не перегружать Гитхаб
+*.csv
+*.json
+*.xlsx
+*.parquet
+*.pickle
+*.pkl
+*.npy
+*.npz
+
+# Исключение: если какой-то мелкий CSV всё-таки нужен на GitHub,
+# раскомментируйте строку ниже (уберите решетку):
+# !important_data.csv
+
+# --- Логи и чекпоинты моделей ---
+*.log
+*.ckpt
+*.h5
+*.pth
+*.onnx
+checkpoint/
+.ipynb_checkpoints/
+
+# --- Секреты и конфиги ---
+.env
+secret.txt
+config.json
+
+#
+_archive
